@@ -40,11 +40,21 @@ un resultado según se orienta en la imagen adjunta.
 function posinicial()
 {
 	 var base = document.getElementById("width").value;
-	 const posin = [0,0,0],[var,0,0],["width",0,"width"],[0,0,"width"],["width
+	 var h = document.getElementById("height").value;
+	 var posin = [[0,0,0],[0,0,0],[0,0,0],[0,0,0],[0,0,0]]
+	 posin[1][0] = base
+	 posin[2][0] = base 
+	 posin[2][2] = base
+	 posin[3][2] = base
+	 posin[4][0] = base/2
+	 posin[4][1] = h
+	 posin[4][2] = base/2
+	 document.getElementById("posicion inicial").innerHTML = posin.toFixed(2);
 }
 function Ejecutar traslación()
 {
-	var 
+	var tv = document.getElementById("vt").value
+	
 }
 </SCRIPT>
 </html>
